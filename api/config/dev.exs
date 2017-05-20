@@ -24,8 +24,9 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :smaq, Smaq.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "ryanyogan",
   database: "smaq_dev",
   hostname: "localhost",
   pool_size: 10
+
+import_config "dev.secret.exs"
